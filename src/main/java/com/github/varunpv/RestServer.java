@@ -21,7 +21,13 @@ public class RestServer {
 
         jerseyServlet.setInitParameter(
                 "jersey.config.server.provider.classnames",
-                Calculator.class.getCanonicalName());
+                Calculator.class.getCanonicalName()+", "+ MessageResource.class.getCanonicalName());
+
+
+
+//        jerseyServlet.setInitParameter(
+//                "jersey.config.server.provider.packages",
+//                "com.github.varunpv");
 
         try {
             jettyServer.start();
