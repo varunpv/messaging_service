@@ -1,4 +1,4 @@
-package com.github.varunpv;
+package com.github.varunpv.messenger.resource;
 
 
 import javax.ws.rs.GET;
